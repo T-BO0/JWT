@@ -1,0 +1,32 @@
+POST https://localhost:7235/Auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username" : "Thomas",
+    "password" : "Mann"
+}
+
+###
+
+POST https://localhost:7235/Auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username" : "Thomas",
+    "password": "Mann"
+}
+
+
+###
+GET https://localhost:7235/admin/random-number HTTP/1.1
+Authorization: Bearer 
+
+###
+GET https://localhost:7235/admin/get-me-name HTTP/1.1
+Authorization: Bearer 
+
+###
+POST https://localhost:7235/Auth/refresh-token HTTP/1.1
+Content-Type: application/json
+
+{}
